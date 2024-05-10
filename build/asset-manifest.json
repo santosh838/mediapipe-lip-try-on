@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bbeb81a5.css",
+    "main.js": "/static/js/main.d2f7903f.js",
+    "static/media/lip-banner.jpg": "/static/media/lip-banner.5bc06c1f3a03b72606a3.jpg",
+    "static/media/before.png": "/static/media/before.5d3881e04543ed2f3396.png",
+    "static/media/next.png": "/static/media/next.2ada07ce04d9ef903770.png",
+    "index.html": "/index.html",
+    "main.bbeb81a5.css.map": "/static/css/main.bbeb81a5.css.map",
+    "main.d2f7903f.js.map": "/static/js/main.d2f7903f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbeb81a5.css",
+    "static/js/main.d2f7903f.js"
+  ]
+}
