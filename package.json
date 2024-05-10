@@ -1,6 +1,6 @@
 {
-  "name": "lip-try-on",
   "homepage": "https://santosh838.github.io/mediapipe-lip-try-on",
+  "name": "lip-try-on",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
