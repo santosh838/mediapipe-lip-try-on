@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/virtual-lip-try-on/static/css/main.bbeb81a5.css",
+    "main.js": "/virtual-lip-try-on/static/js/main.a1855eae.js",
+    "static/media/lip-banner.jpg": "/virtual-lip-try-on/static/media/lip-banner.5bc06c1f3a03b72606a3.jpg",
+    "static/media/before.png": "/virtual-lip-try-on/static/media/before.5d3881e04543ed2f3396.png",
+    "static/media/next.png": "/virtual-lip-try-on/static/media/next.2ada07ce04d9ef903770.png",
+    "index.html": "/virtual-lip-try-on/index.html",
+    "main.bbeb81a5.css.map": "/virtual-lip-try-on/static/css/main.bbeb81a5.css.map",
+    "main.a1855eae.js.map": "/virtual-lip-try-on/static/js/main.a1855eae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbeb81a5.css",
+    "static/js/main.a1855eae.js"
+  ]
+}
