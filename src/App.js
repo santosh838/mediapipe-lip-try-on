@@ -31,6 +31,8 @@ const colors = [
 const titles = ["Red", "blue", "yellow", "brown", "yellow"];
 
 function App() {
+  const [isCameraLoaded, setCameraLoaded] = useState(false);
+  const [isCameraError, setCameraError] = useState(false);
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,6 +42,8 @@ function App() {
 
   const toggleCamera = () => {
     setIsCameraOn(prevState => !prevState);
+    setClickedIndex(-1); // Reset clicked index when toggling camera
+    setActiveColor(colors[0]);
   };
 
   const handleClick = (index) => {
@@ -58,7 +62,13 @@ function App() {
     event.preventDefault();
     setActiveIndex((prevIndex) => (prevIndex === 0 ? colors.length - 1 : prevIndex - 1));
   };
+  const handleUserMediaError = () => {
+    setCameraError(true);
+  };
 
+  const handleUserMedia = () => {
+    setCameraLoaded(true);
+  };
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -98,7 +108,7 @@ function App() {
     } catch (error) {
       console.error("Error initializing FaceMesh or Camera:", error);
     }
-  }, [activeColor]);
+  }, [isCameraLoaded,activeIndex]);
 
   function onResults(results) {
     const canvas = canvasRef.current;
@@ -160,6 +170,8 @@ function App() {
                 width={inputResolution.width}
                 height={inputResolution.height}
                 style={{ position: "absolute", borderRadius: "20px" }}
+                onUserMediaError={handleUserMediaError}
+                onUserMedia={handleUserMedia}
                 videoConstraints={videoConstraints}
                 ref={videoRef}
               />
